@@ -1,0 +1,52 @@
+--- kartofel-1.2/config.h~	2009-02-04 06:31:19.000000000 +0100
++++ kartofel-1.2/config.h	2009-02-10 13:46:01.000000000 +0100
+@@ -20,28 +20,28 @@
+ 
+ #define VERSION "1.2"
+ 
+-#define HIGH_SCORES_FILENAME "./kartofel.txt"
++#define HIGH_SCORES_FILENAME "/usr/share/kartofel/kartofel.txt"
+ #define SCORE_SUBMISSION_URL "http://kartofel.jfedor.org/ksc.php"
+ 
+-#define SOUND_MENU_NAV_FILENAME "sounds/click02.wav"
+-#define SOUND_MENU_CLICK_FILENAME "sounds/click01.wav"
+-#define SOUND_ROTATE_FILENAME "sounds/click03.wav"
+-#define SOUND_START_FILENAME "sounds/click03.wav"
+-#define SOUND_CRASH_FILENAME "sounds/sound_crash.wav"
+-#define SOUND_DOT_LIT_FILENAME "sounds/sound_dot_lit.wav"
+-#define SOUND_LEVEL_SUCCESS_FILENAME "sounds/sound_level_success.wav"
+-#define SOUND_OUT_OF_TIME_FILENAME "sounds/sound_out_of_time.wav"
+-#define SOUND_ENTER_NAME_RETURN_FILENAME "sounds/click01.wav"
+-
+-#define MENU_FONT_FILENAME "fonts/Cyklop-Regular.ttf"
+-#define MENU_TITLE_FONT_FILENAME "fonts/Cyklop-Regular.ttf"
+-#define INFO_FONT_FILENAME "fonts/FreeSans.ttf"
+-#define INFO_FONT_SMALL_FILENAME "fonts/FreeSans.ttf"
+-#define MSG_FONT_FILENAME "fonts/Cyklop-Regular.ttf"
+-
+-#define MUSIC_FILENAME "music/moonlight.ogg"
+-#define MENU_BACKGROUND_IMAGE_FILENAME "images/Cliffs-1024x768.png"
+-#define ICON_FILENAME "images/icon32x32.png"
+-#define LEVELS_FILENAME_PREFIX "levels/"
++#define SOUND_MENU_NAV_FILENAME "/usr/share/kartofel/sounds/click02.wav"
++#define SOUND_MENU_CLICK_FILENAME "/usr/share/kartofel/sounds/click01.wav"
++#define SOUND_ROTATE_FILENAME "/usr/share/kartofel/sounds/click03.wav"
++#define SOUND_START_FILENAME "/usr/share/kartofel/sounds/click03.wav"
++#define SOUND_CRASH_FILENAME "/usr/share/kartofel/sounds/sound_crash.wav"
++#define SOUND_DOT_LIT_FILENAME "/usr/share/kartofel/sounds/sound_dot_lit.wav"
++#define SOUND_LEVEL_SUCCESS_FILENAME "/usr/share/kartofel/sounds/sound_level_success.wav"
++#define SOUND_OUT_OF_TIME_FILENAME "/usr/share/kartofel/sounds/sound_out_of_time.wav"
++#define SOUND_ENTER_NAME_RETURN_FILENAME "/usr/share/kartofel/sounds/click01.wav"
++
++#define MENU_FONT_FILENAME "/usr/share/kartofel/fonts/Cyklop-Regular.ttf"
++#define MENU_TITLE_FONT_FILENAME "/usr/share/kartofel/fonts/Cyklop-Regular.ttf"
++#define INFO_FONT_FILENAME "/usr/share/kartofel/fonts/FreeSans.ttf"
++#define INFO_FONT_SMALL_FILENAME "/usr/share/kartofel/fonts/FreeSans.ttf"
++#define MSG_FONT_FILENAME "/usr/share/kartofel/fonts/Cyklop-Regular.ttf"
++
++#define MUSIC_FILENAME "/usr/share/kartofel/music/moonlight.ogg"
++#define MENU_BACKGROUND_IMAGE_FILENAME "/usr/share/kartofel/images/Cliffs-1024x768.png"
++#define ICON_FILENAME "/usr/share/kartofel/images/icon32x32.png"
++#define LEVELS_FILENAME_PREFIX "/usr/share/kartofel/levels/"
+ 
+ #endif  // KARTOFEL_CONFIG_H
