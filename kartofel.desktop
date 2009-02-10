@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Kartofel
+Comment=The game of skill and logic
+Comment[pl]=Gra zręcznościowo-logiczna
+Icon=kartofel
+Exec=kartofel
+Terminal=false
+Type=Application
+Categories=Game;ArcadeGame;
+# vi: encoding=utf-8
