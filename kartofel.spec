@@ -24,7 +24,7 @@ Kartofel is a game of skill and logic. The objective is to connect the
 numbered dots in order, without crossing over yourself.
 
 %description -l pl.UTF-8
-Kartofel jest grą zręcznościowo logiczną. Zadaniem gracza jest
+Kartofel jest grą zręcznościowo-logiczną. Zadaniem gracza jest
 łączenie ponumerowanych kropek w odpowiedniej kolejności, nie
 przecinając istniejących już połączeń.
 
