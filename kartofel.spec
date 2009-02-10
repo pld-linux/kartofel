@@ -7,6 +7,7 @@ License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://kartofel.jfedor.org/downloads/%{name}-%{version}.tar.gz
 # Source0-md5:	4452da69e2e5c8f78ac22e234594dabf
+Source1:	%{name}.desktop
 Patch0:		%{name}-link.patch
 Patch1:		%{name}-config.patch
 URL:		http://kartofel.jfedor.org/
@@ -42,8 +43,11 @@ przecinając istniejących już połączeń.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_desktopdir},%{_pixmapsdir}}
 
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+
+install images/icon32x32.png $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
 install kartofel $RPM_BUILD_ROOT%{_bindir}
 install kartofel.txt $RPM_BUILD_ROOT%{_datadir}/%{name}
 
@@ -57,3 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES COPYRIGHT README
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/%{name}
+%{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/%{name}.png
