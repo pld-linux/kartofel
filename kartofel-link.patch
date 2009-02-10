@@ -1,0 +1,11 @@
+--- kartofel-1.2/Makefile~	2009-02-10 13:26:24.000000000 +0100
++++ kartofel-1.2/Makefile	2009-02-10 13:31:18.000000000 +0100
+@@ -34,7 +34,7 @@
+ 	g++ play.cc -c $(CXXOPTIONS) -o play.o `sdl-config --cflags` `curl-config --cflags`
+ 
+ kartofel: saved_game.o game.o util.o play.o lines.o submit_game.o trig_table.o trig_table_defs.o
+-	g++ saved_game.o game.o util.o lines.o submit_game.o play.o trig_table.o trig_table_defs.o -g -Wall -o kartofel `sdl-config --libs` `curl-config --libs` -lSDL_gfx -lSDL_ttf -lSDL_mixer -lSDL_image -lz
++	g++ $(LDFLAGS) -o kartofel saved_game.o game.o util.o lines.o submit_game.o play.o trig_table.o trig_table_defs.o `sdl-config --libs` `curl-config --libs` -lSDL_gfx -lSDL_ttf -lSDL_mixer -lSDL_image -lz
+ 
+ verify.o: verify.cc game.h saved_game.h lines.h util.h
+ 	g++ verify.cc -c $(CXXOPTIONS) -o verify.o
