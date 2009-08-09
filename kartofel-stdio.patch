@@ -1,0 +1,10 @@
+--- kartofel-1.2-orig/saved_game.cc	2009-02-01 02:06:33.000000000 +0100
++++ kartofel-1.2/saved_game.cc	2009-08-09 11:36:58.792068134 +0200
+@@ -19,6 +19,7 @@
+ #include <cstdlib>
+ #include <sstream>
+ #include <zlib.h>
++#include <stdio.h>
+ 
+ #include "saved_game.h"
+ 
