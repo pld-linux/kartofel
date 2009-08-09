@@ -1,4 +1,5 @@
 Summary:	The game of skill and logic
+Summary(hu.UTF-8):	A találékonyság és logika játéka
 Summary(pl.UTF-8):	Gra zręcznościowo-logiczna
 Name:		kartofel
 Version:	1.2
@@ -10,6 +11,7 @@ Source0:	http://kartofel.jfedor.org/downloads/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-link.patch
 Patch1:		%{name}-config.patch
+Patch2:		%{name}-stdio.patch
 URL:		http://kartofel.jfedor.org/
 BuildRequires:	SDL_gfx-devel
 BuildRequires:	SDL_image-devel
@@ -24,6 +26,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Kartofel is a game of skill and logic. The objective is to connect the
 numbered dots in order, without crossing over yourself.
 
+%description -l hu.UTF-8
+Kartofel egy logikai játék, amelyben találékonyságra is szükség van. A
+cél, hogy a sorszámozott pontokat sorrendben összekösd keresztezés
+nélkül.
+
 %description -l pl.UTF-8
 Kartofel jest grą zręcznościowo-logiczną. Zadaniem gracza jest
 łączenie ponumerowanych kropek w odpowiedniej kolejności, nie
@@ -33,6 +40,7 @@ przecinając istniejących już połączeń.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 %{__sed} -i 's@g++@$(CXX)@' Makefile
 
 %build
